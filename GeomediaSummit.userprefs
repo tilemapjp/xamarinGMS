@@ -4,7 +4,6 @@
     <Files>
       <File FileName="GeomediaSummit.Core/MBTilesAccessor.cs" Line="1" Column="1" />
       <File FileName="GeomediaSummit.ViewDroid/MBTilesProvider.cs" Line="1" Column="1" />
-      <File FileName="../AtCreationMap/AtCreationMap/MapActivity.cs" Line="1" Column="1" />
       <File FileName="GeomediaSummit.ViewTouch/MBTilesProvider.cs" Line="1" Column="1" />
       <File FileName="GeomediaSummit.ViewDroid/MainActivity.cs" Line="43" Column="18" />
     </Files>
