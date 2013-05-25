@@ -23,4 +23,22 @@ amay077さん記事中のMapsAndLocationDemoソリューションに含まれて
 
 GoogleMapsコンポーネントの追加 (iOS)
 ---------------
+iOSでは、複雑な手順は必要なく、XamarinStoreというコンポーネントストアからGoogleMapsコンポーネントを無料で追加できます。  
+GeomediaSummitソリューション中のGeomediaSummit.ViewTouchプロジェクトでは、Componentsフォルダ中のGoogleMapsコンポーネントがリンク切れになっていると思いますので、これを削除します。  
+その後、Componentsフォルダをダブルクリックすると、Components管理のUIが出てきますので、その右上の「Get more components」よりXamarinStoreに行く事ができます。  
+検索等からGoogleMapsコンポーネントを探し、Installすれば完了です。
+
+Google Maps API/SDKのAPIキー取得、置き換え
+---------------
+Google API Console https://code.google.com/apis/console/ より、Google Maps API/SDKのキーを取得してください。
+
+iOS、Androidは別のキーになり、また共にアプリケーションの名前空間(iOSアプリでいうところのBundle Identifier相当のもの)が必要になります。  
+サンプルにはiOS、Androidともに「com.geomedia.summit」という名前空間が設定されていますが、適宜自分のものに偏向してください。  
+名前空間を変更するファイルは、Androidでは GeomediaSummit.ViewDroid/Properties/AndroidManifest.xml 、iOSでは GeomediaSummit.ViewTouch/Info.plist 内の設定になります。
+
+また、Androidでは名前空間だけでなく、署名もAPIキーの要請に必要になりますが、先に紹介した amay066 さんの記事ではAPIキーの取得まで解説されていますので、併せてご覧下さい。
+
+APIキーを入手した後は、プログラム内の適当な位置にAPIキーを記述してください。  
+Androidでは GeomediaSummit.ViewDroid/Properties/AndroidManifest.xml 、iOSでは GeomediaSummit.ViewTouch/AppDelegate.cs になります。
+共に、サンプルDL時は「Your API Key Here」となっているところを、APIキーで書き換えてください。
 
